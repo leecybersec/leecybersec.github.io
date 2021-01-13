@@ -9,6 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+  <!-- Include jQuery Roadmap CSS -->
+  <link href="./dist/jquery.roadmap.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,7 +23,7 @@
       </a>
     </div>
     <section>
-      <p>Hello! I am Hades. I work as Cyber Security Consultant. I have passion for hacking, penetration testing and bug hunting. I'm  focused, dedicated and hard-working in a changing and challenging environment.</p>
+      <p>Hello! I am Hades. I work as Cyber Security Technology Consultant. I have passion for hacking, penetration testing and bug hunting. I'm  focused, dedicated and hard-working in a changing and challenging environment.</p>
       <p>leecybersec@gmail.com</p>
       <a href="https://www.facebook.com/leecybersec" target="_blank">
         <i class="fab fa-facebook-f"></i>
@@ -30,9 +33,6 @@
       </a>
       <a href="https://github.com/leecybersec" target="_blank">
         <i class="fab fa-github-alt"></i>
-      </a>
-      <a href="https://www.instagram.com/leecybersec" target="_blank">
-        <i class="fab fa-instagram"></i>
       </a>
       <a href="https://www.linkedin.com/in/leecybersec" target="_blank">
         <i class="fab fa-linkedin-in"></i>
@@ -85,10 +85,90 @@
     </section>
 
     <section>
-      <h3>Time Line</h3>
+      <h3>License & Certification</h3>
+
+        <!-- <ul class="job-description">
+          <li>PentesterLab's Unix Badge</li>
+          <li>PentesterLab's Essential Badge</li>
+        </ul> -->
+      
+        <!-- Roadmap -->
+        <div id="my-roadmap"></div>
+
+        <!-- Include jQuery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+        <!-- Include jQuery Roadmap Plugin -->
+        <script src="./dist/jquery.roadmap.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+
+            var events = [
+              {
+                date: 'Oct - 2019',
+                content: 'PentesterLab\'s Unix Badge<small><a href="https://pentesterlab.com/profile/leecybersec" target="_blank">See credential</a></small>'
+              },
+              {
+                date: 'Nov - 2019',
+                content: 'PentesterLab\'s Essential Badge<small><a href="https://pentesterlab.com/profile/leecybersec" target="_blank">See credential</a></small>'
+              },
+              {
+                date: 'Feb - 2021',
+                content: 'OSCP<small>Offensive Security Certified Professional</small>'
+              },
+              {
+                date: 'Jun - 2021',
+                content: 'Bachelor\'s Degree<small>Bachelor of Engineering in Information Security (Honor Program)</small>'
+              },
+              {
+                date: 'Oct - 2021',
+                content: 'OSWE<small>Offensive Security Web Expert</small>'
+              },
+              {
+                date: 'Feb - 2022',
+                content: 'OSEP<small>Offensive Security Experienced Penetration Tester</small>'
+              },
+              {
+                date: 'Oct - 2022',
+                content: 'OSED<small>Offensive Security Exploit Developer</small>'
+              },
+              {
+                date: 'Oct - 2022',
+                content: 'OSCE³<small>Offensive Security Exploit Developer</small>'
+              },
+              {
+                date: 'Nov - 2022',
+                content: 'OSWP<small>Offensive Security Wireless Professional</small>'
+              },
+              {
+                date: 'Feb - 2023',
+                content: 'CCSP<small>Certified Cloud Security Professional</small>'
+              },
+              {
+                date: 'Nov - 2023',
+                content: 'CISSP<small>Certified Information Systems Security Professional</small>'
+              },
+            ];
+
+            $('#my-roadmap').roadmap(events, {
+                eventsPerSlide: 6,
+                slide: 1,
+                prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
+                nextArrow: '<i class="material-icons">keyboard_arrow_right</i>',
+                onBuild: function() {
+                    console.log('onBuild event')
+                }
+            });
+          });
+        </script>
+    </section>
+
+    <section>
+      <h3>Job and Career Timeline</h3>
       <article>
         <div class='job-title'>
-          <span>08.2019 - 02.2021</span> <strong>EY Consulting Vietnam JSC</strong><br> <strong>Position:</strong> Cyber Security Consultant
+          <span>08.2019 - 02.2021</span> <strong>EY Consulting Vietnam JSC</strong><br> <strong>Position:</strong> Cyber Security Technology Consultant
         </div>
         <div>
           <p><strong>Vulnerability Assessment / Penetration Testing / Cyber Threat Intelligence</strong></p>
@@ -116,78 +196,43 @@
     </section>
 
     <section>
-      <h3>Licenses & Certifications</h3>
-        <!-- <article>
-        <div class='school'>
-          <span>Issued Dec 2022</span> <strong>Offensive Security Wireless Professional (OSWP)</strong>
-        </div>
-        <div>
-          Main subject: Wireless Attacks (PEN-210) introduces students to the skills needed to audit and secure wireless devices. It’s a foundational course alongside PEN-200 and would benefit those who would like to gain more skill in network security.
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span>Issued Oct 2022</span> <strong>Offensive Security Experienced Penetration Tester (OSEP)</strong>
-        </div>
-        <div>
-          Main subject: Evasion Techniques and Breaching Defenses (PEN-300) is an advanced penetration testing course. It builds on the knowledge and techniques taught in Penetration Testing with Kali Linux, teaching students to perform advanced penetration tests against mature organizations with an established security function.
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span>Issued May 2022</span> <strong>Certified Information Systems Security Professional (CISSP)</strong>
-        </div>
-        <div>
-          Main subject: CISSP is an independent information security certification granted by the International Information System Security Certification Consortium, also known as (ISC)².
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span>Issued May 2021</span> <strong>Offensive Security Web Expert (OSWE)</strong>
-        </div>
-        <div>
-          Main subject: Specialize in web application security with WEB-300. From XSS attacks to advanced SQL injections, learn how to exploit and secure web apps using white box pentesting methods.
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span>Issued Feb 2021</span> <strong>Offensive Security Certified Professional (OSCP)</strong>
-        </div>
-        <div>
-          Main subject: PEN-200 is our foundational penetration testing course. Students learn the latest tools and techniques, and practice them in a virtual lab.
-        </div>
-      </article> -->
-      <article>
-        <div class='school'>
-          <span>Issued Oct 2019</span> <strong>PentesterLab's Badges</strong>
-        </div>
-        <div>
-          Main subject: Unix Badge, Pcap Badge, Essential Badge.
-        </div>
-        <a href="https://pentesterlab.com/profile/leecybersec" target="_blank">See credential</a>
-      </article>
-    </section>
-
-    <section>
-      <h3>Education</h3>
-      <article>
-        <div class='school'>
-          <span>2016-2021</span> <strong>University of Information Technology</strong>
-        </div>
-        <div class="descrition">
-          Bechelor Degree of Computer and Information Systems Security/Information Assurance (Hons)
-        </div>
-      </article>
-    </section>
-
-    <section>
-      <h3>Skills</h3>
+      <h3>Education and Skill</h3>
       <div class='skills'>
+        <!-- University -->
+        <article>
+          <div class='school'>
+            <span>2016-2021</span> <strong><a href="https://www.uit.edu.vn/" target="_blank">University of Information Technology</a></strong>
+          </div>
+          <div class="descrition">
+            Bachelor of Engineering in Information Security (Honor Program).
+          </div>
+        </article>
+        <!-- Offensive Security -->
+        <article>
+          <div class='school'>
+            <span>2020-2022</span> <strong><a href="https://www.offensive-security.com/" target="_blank">Offensive Security</a></strong>
+          </div>
+          <div>
+            Main subject: OSCP, OSWE, OSEP, OSED, OSCE³, OSWP.
+          </div>
+        </article>
+        <!-- PentesterLab -->
+        <article>
+          <div class='school'>
+            <span>2019-2022</span> <strong><a href="https://pentesterlab.com" target="_blank">PentesterLab</a></strong>
+          </div>
+          <div>
+            Main subject: Unix Badge, Pcap Badge, Essential Badge.
+          </div>
+        </article>
+
+        <div class='column'></div>
+
         <div class='column'>
           <h4>Languages</h4>
           <ul class="job-description">
-            <li>Vietnamese - Native speaker</li>
             <li>English - Proficient</li>
+            <li>Vietnamese - Native speaker</li>
           </ul>
         </div>
 
@@ -202,12 +247,13 @@
             <li>Unrestricted File Upload</li>
           </ul>
         </div>
+        
       </div>
     </section>
     
   </main>
   <footer>
-    <p>Created by: <a href="https://leecybersec.com">@LeeCyberSec</a>  / <a href="https://github.com/ritaly">ritaly</a> / 2021 </p>
+    <p>Created by: <a href="https://leecybersec.com">@LeeCyberSec</a> / 2021 </p>
   </footer>
 </body>
 </html>
