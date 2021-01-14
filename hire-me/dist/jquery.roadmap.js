@@ -59,8 +59,8 @@
 			var currentSlide = settings.slide - 1;
 
 			/**
-    * Store events and settings
-    */
+		    * Store events and settings
+		    */
 			$this.data({
 				events: events,
 				settings: settings,
@@ -128,8 +128,8 @@
 				clear();
 
 				/**
-     * Init events
-     */
+			     * Init events
+			     */
 				buildEvents();
 
 				/**
